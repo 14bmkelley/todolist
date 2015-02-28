@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% load staticfiles %}
+	<title>Welcome to MyTasks</title>
+	<link type='text/css' rel='stylesheet' href='http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css' />
+	<link type='text/css' rel='stylesheet' href='http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css' />
+	<link type='test/css' rel='stylesheet' href='{% static "style/stylesheet.css" %}' />
+</head>
+
+<body>
+	<ul class='nav nav-pills'>
+		<li><a href='about'>About</a></li>
+		<li><a href='#'>Login</a></li>
+		<li><a href='profile'>To-Do List</a></li>
+		<li style='float: left; padding-left: 5%;'><a href='/'>Home</a></li>
+	</ul>
+	<div class='jumbotron'>
+		<h1>WELCOME TO MYTASKS</h1>
+		<br>
+		<p>Join us as we simplify and get your life on track!</p>
+		<p>As a bonus, you get to see dogs!</p>
+	</div>
+	<div id='dividers'>
+		<div class='col-md-4'>
+			<p>Learn more about us by clicking <a href='about'>here</a></p>
+			<p>We promise it'll be interesting</p>
+			<div class='thumbnail'>
+				<img src = "http://www.nedhardy.com/wp-content/uploads/images/2012/september/happy_dogs/happy_dogs_19.jpg">
+			</div>
+		</div>
+		<div class='col-md-4'>
+			<p>Start right off with our To-do-app by navigating to <a href='profile'>this page</a></p>
+			<p>Trust me! It'll prove to be useful!</p>
+			<div class = "thumbnail">
+				<img src = "http://images.shibashake.com/wp-content/blogs.dir/7/files/2010/03/IMG_2728.jpg">
+			</div>
+		</div>
+	<div class = "col-md-4">
+		<p>Learn the ins and outs of the application over <a href = "#">here</a>
+		<p>Our tool may not always be easy to use...</p>
+		<div class = "thumbnail">
+			<img src = "http://media.mnn.com/sites/default/files/user/181799/Professor-dog.jpg">
+		</div>
+	</div>
+</body>
+
+</html>

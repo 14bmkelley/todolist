@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% load staticfiles %}
+	<title>Brandon's Profile</title>
+	<link type='text/css' rel='stylesheet' href='http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css'>
+	<link type='text/css' rel='stylesheet' href='http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css'>
+	<link type='text/css' rel='stylesheet' href='{% static "style/stylesheet.css" %}' />
+</head>
+
+<body style='background-color: #BAEEAB'>
+    <ul class='nav nav-pills'>
+		<li><a href='about'>About</a></li>
+		<li><a href='#'>Login</a></li>
+		<li><a href='profile'>To-Do List</a></li>
+		<li style='float: left; padding-left: 5%;'><a href='/'>Home</a></li>
+	</ul>
+	<div class='jumbotron'>
+		<h1>Brandon's MyList Page</h1>
+	</div>
+	<div class = "col-md-3"></div>
+    <div class = "col-md-6" style = "background-color: #BAEEAB; text-align: left; padding-top: 30px; border-left: 1px solid #1FA670; border-right: 1px solid #1FA670; padding-right: 0.5em, padding-left: 0.5em;">
+		<div style='text-align: center'>
+			<img style='width: 20%; padding-top: 0.5em;' src='https://scontent.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1473016_10201362389721424_1099548289_n.jpg?oh=8ba469dfd149cfed8f2a2024d6850569&oe=558A2581' />
+			<h3>Name: Brandon Kelley</h3>
+		</div>
+	    <h3 style='text-align: center;'>Here is a breakdown of your tasks:</h2>
+		<div>
+			{% for task in tasks %}
+			<div style='margin-top: 5em;'>
+				<h3 style='margin-bottom: 1em;'>Title: {{task.title}} - Date due: {{task.date_due}}</h3>
+				<p>Description: {{task.description}}</p>
+				<p>Date posted: {{task.date_posted}}</p>
+				<p>Status: 
+					{% if task.status == False %}
+						Needs to be done.
+					{% else %}
+						Done.
+					{% endif %}
+				</p>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class = "col-md-3"></div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<title>Welcome to MyTasks</title>
+		<link type='text/css' rel='stylesheet' href='http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css' />
+		<link type='text/css' rel='stylesheet' href='http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css' />
+		<link type='test/css' rel='stylesheet' href='{% static "style/stylesheet.css" %}' />
+</head>
+
+<body>
+	<ul class='nav nav-pills'>
+		<li><a href='about'>About</a></li>
+		<li><a href='#'>Login</a></li>
+		<li><a href='profile'>To-Do List</a></li>
+		<li style='float: left; padding-left: 5%;'><a href='/'>Home</a></li>
+	</ul>
+	<div class='jumbotron'>
+		<h1>Hey, we're the developers!</h1>
+		<br>
+		<p>And we're glad to share a bit of ourselves with you.</p>
+	</div>
+	<div id = "divider">
+		<div class = "col-md-1"></div>
+			<div class = "col-md-5" style = "text-align: center">
+				<h2>Meet Garrett</h2>
+				<div class = "thumbnail">
+					<img src= "http://i.imgur.com/E58E61h.jpg" />
+				</div>
+				<p>Yeah, he made this page. Don't hate him for it. Though he was originally going into medicine, he found his passion in computer science, particularly with networking applications. He still has a long way to go. His major is Computer Engineering because he loves to understand and apply computing concepts. Give him a shoutout for pushing his html designs!</p>
+			</div>
+			<div class = "col-md-5" style = "text-align: center">
+				<h2>Meet Brandon</h2>
+				<div class = "thumbnail">
+					<img src = "http://i.imgur.com/BTrMXkW.jpg?1">
+				</div>
+				<p>Please, call him Chad. Even though he is natively from Washington, this kid totally embodies the spirit of the average Cali kid. He loves to point out anything and everything basic, except that he loves Starbucks himself. He is a Computer Engineer like Garrett who is more focused on frontend work. Give him a shoutout for setting up the entire backend of this site!</p>
+			</div>	
+		<div class = "col-md-1"></div>
+	</div>
+</body>
+
+</html>

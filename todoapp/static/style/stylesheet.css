@@ -1,0 +1,44 @@
+.nav {
+	background-color: #030F6B;
+	font-color: #FFFFFF;
+	margin-bottom: 0px;
+	border: none;
+}
+
+.nav li {
+	color: #FFFFFF;
+	float: right;
+	padding-right: 5%;
+}
+
+.jumbotron {
+	text-align: center;
+	background-color: #1FA670;
+	margin-top: 0px;
+	border: none;
+}
+
+.jumbotron h1 {
+	color: #FFFFFF;
+}
+
+.jumbotron p {
+	color: #FFFFFF;
+}
+
+#dividers {
+	margin-top: 1.25em;
+}
+
+.col-md-4 {
+	text-align: center;
+}
+
+.epic_container_container {
+	padding: 1em;
+	border: 2px dashed #1FA670;
+}
+
+.epic_container {
+	margin-bottom: 1em;
+}
