@@ -1,0 +1,6 @@
+To-do List Web Application
+
+This is a web application my friend and I hacked together in about 6 hours
+during a hackathon. It runs on Python with the Django module. Front end
+development was done almost entirely by Garrett Chan, whereas I (Brandon
+Kelley) programmed the server side. Enjoy!
